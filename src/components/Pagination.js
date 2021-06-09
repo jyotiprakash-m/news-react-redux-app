@@ -4,12 +4,12 @@ function Pagination({ pageNumbers, paginate, nextPage, previousPage }) {
 
 
     return (
-        <div>
+        <div style={{ display: 'flex' }}>
             <button onClick={previousPage}>Previous</button>
             {pageNumbers.map(number => (
-                <a onClick={() => paginate(number)} href='!#' style={{ marginLeft: "5px" }}>
+                <p key={number} onClick={() => paginate(number)} style={{ marginLeft: "5px" }}>
                     {number}
-                </a>
+                </p>
             ))}
             <button onClick={nextPage}>Next</button>
 
