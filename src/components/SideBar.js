@@ -1,19 +1,47 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from "react-redux";
-import {
-    setLayout
-} from "../reducers";
+import Avatar from '@material-ui/core/Avatar';
+import FormatListBulletedIcon from '@material-ui/icons/FormatListBulleted';
+import ViewAgendaIcon from '@material-ui/icons/ViewAgenda';
+import { setLayout } from "../reducers";
 function SideBar() {
     let layout = useSelector((state) => state.layout.layout);
     const dispatch = useDispatch();
     useEffect(() => {
-        dispatch(setLayout(true));
+        // dispatch(setLayout(true));
 
     }, [])
     console.log(layout);
-    console.log('Hello world')
+    const listLayout = () => {
+        dispatch(setLayout(true));
+    }
+    const blockLayout = () => {
+        dispatch(setLayout(false));
+    }
     return (
         <div className="sidebar">
+            <div className="itemProfile">
+                <Avatar alt="Remy Sharp" src="https://material-ui.com/static/images/avatar/1.jpg" />
+                <div className="info">
+                    <h4>Hi,Reader,</h4>
+                    <p>Here`s your News!</p>
+                </div>
+            </div>
+            <div className="item">
+                <h3>View Toggle</h3>
+                <div className="toggleOptions">
+                    <div className="option" onClick={listLayout}>
+                        <FormatListBulletedIcon />
+                    </div>
+                    <div className="option" onClick={blockLayout}>
+                        <ViewAgendaIcon />
+                    </div>
+                </div>
+            </div>
+            <div className="item">
+                <h3>Have a Feedback?</h3>
+                <button>We`re Listening</button>
+            </div>
 
         </div>
     )

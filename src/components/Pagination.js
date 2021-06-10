@@ -1,20 +1,23 @@
 import React from 'react'
-
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 function Pagination({ pageNumbers, paginate, nextPage, previousPage }) {
-
 
     return (
         <div style={{ display: 'flex' }}>
-            <button onClick={previousPage}>Previous</button>
+            <ArrowBackIosIcon onClick={previousPage} />
             {pageNumbers.map(number => (
+
                 <p key={number} onClick={() => paginate(number)} style={{ marginLeft: "5px" }}>
                     {number}
                 </p>
-            ))}
-            <button onClick={nextPage}>Next</button>
+
+            ))
+            }
+            <ArrowForwardIosIcon onClick={nextPage} />
 
 
-        </div>
+        </div >
     )
 }
 
