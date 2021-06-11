@@ -5,7 +5,7 @@ function Pagination({ pageNumber, pageNumbers, paginate, nextPage, previousPage 
 
     return (
         <div className="pagination">
-            {pageNumber > 1 && <ArrowBackIosIcon />}
+            {pageNumber > 1 && <ArrowBackIosIcon onClick={previousPage} />}
             {pageNumbers.map((number, index) => (
                 <div className={number === pageNumber ? "pageNumber pageNumberDark" : "pageNumber"}>
                     <p key={number} onClick={() => paginate(number)}>
