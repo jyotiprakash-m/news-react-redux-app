@@ -19,9 +19,11 @@ function Form({ setDisplayForm, displayForm }) {
         }
     }
     useEffect(() => {
-        setMobileError(null)
         setEmailError(null)
-    }, [email, mobile])
+    }, [email])
+    useEffect(() => {
+        setMobileError(null)
+    }, [mobile])
 
     return (
         <div className="form">
