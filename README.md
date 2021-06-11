@@ -28,6 +28,6 @@ Some Screenshots of the project
 
 
 ## Live on
-I host this application on vercel.com .
+I host this application on netlify.com .
 
 > [https://news-react-webapp.netlify.app](https://news-react-webapp.netlify.app)
