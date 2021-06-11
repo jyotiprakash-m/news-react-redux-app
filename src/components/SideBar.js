@@ -1,17 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { useDispatch, useSelector } from "react-redux";
 import Avatar from '@material-ui/core/Avatar';
 import FormatListBulletedIcon from '@material-ui/icons/FormatListBulleted';
 import ViewAgendaIcon from '@material-ui/icons/ViewAgenda';
 import { setLayout } from "../reducers";
+import Form from './Form'
 function SideBar() {
     let layout = useSelector((state) => state.layout.layout);
     const dispatch = useDispatch();
     const [displayForm, setDisplayForm] = useState(false)
-    useEffect(() => {
-        // dispatch(setLayout(true));
 
-    }, [])
     console.log(layout);
     const listLayout = () => {
         dispatch(setLayout(true));
@@ -19,7 +17,6 @@ function SideBar() {
     const blockLayout = () => {
         dispatch(setLayout(false));
     }
-    console.log("Display form" + displayForm)
     return (
         <div className="sidebar">
             <div className="sidebar_contains">
@@ -46,7 +43,15 @@ function SideBar() {
                     <button onClick={() => setDisplayForm(!displayForm)}>We`re Listening</button>
                 </div>
             </div>
+            {displayForm &&
+                <div className="formContainer">
+                    <div className="greyBody" onClick={() => setDisplayForm(!displayForm)}>nsfjskjfk</div>
+                    <div className="formInside">
+                        <Form />
+                    </div>
 
+                </div>
+            }
         </div>
     )
 }

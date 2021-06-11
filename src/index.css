@@ -36,7 +36,7 @@ iframe{
 
 /* Form Component */
 .form{
-  width: 80%;
+  width: 80vw;
   background-color: #ebf2f7;
   height: 100vh;
 }
@@ -173,13 +173,15 @@ input[type="submit"]{
 .allNews{
   padding: 8vh;
 }
+
+/* ---> List layout */
 .list{
+  cursor: pointer;
   margin-bottom: 20px;
   background-color: #ffffff;
   padding: 15px;
   border-radius: 5px;
 }
-/* ---> List layout */
 .list__containt > img{
   height: 60px;
   width: 60px;
@@ -206,6 +208,7 @@ display: -webkit-box;
 
 /* --->Block Layout */
 .block{
+  cursor: pointer;
   margin-bottom: 20px;
   background-color: #ffffff;
   padding: 15px;
@@ -239,4 +242,20 @@ display: -webkit-box;
 .imageContainer > img{
   width: 100%;
   /* height: 100%; */
+}
+
+/* Additional setting of form */
+.formContainer{
+  position: absolute;
+  top: 0;
+  background-color: brown;
+}
+.formInside{
+  position: relative;
+}
+.greyBody{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color:rgba(0, 0, 0, 0.5);
 }
