@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import Popup from 'reactjs-popup';
 
 function News({ news }) {
@@ -33,7 +33,7 @@ function News({ news }) {
                             {close => (
                                 <div className="modal">
                                     <div className="content">
-                                        <iframe src={item.link} width="100%" height="100%" />
+                                        <iframe src={item.link} width="100%" height="100%" title={item.title} />
                                     </div>
 
                                 </div>
@@ -63,7 +63,7 @@ function News({ news }) {
                             {close => (
                                 <div className="modal">
                                     <div className="content">
-                                        <iframe src={item.link} width="100%" height="100%" />
+                                        <iframe src={item.link} width="100%" height="100%" title={item.link} />
                                     </div>
 
                                 </div>

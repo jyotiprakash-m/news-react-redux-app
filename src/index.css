@@ -262,6 +262,11 @@ display: -webkit-box;
 }
 
 /* Style pagination */
+.paginationContainer{
+  position: fixed;
+  bottom: 20px;
+  right: 10%;
+}
 .pagination{
   display: flex;
   justify-content: center;
