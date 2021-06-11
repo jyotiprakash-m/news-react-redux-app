@@ -8,6 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -171,7 +172,7 @@ input[type="submit"]{
 
 /* Design News */
 .allNews{
-  padding: 8vh;
+  padding: 5vh;
 }
 
 /* ---> List layout */
@@ -248,7 +249,7 @@ display: -webkit-box;
 .formContainer{
   position: absolute;
   top: 0;
-  background-color: brown;
+  z-index: 999;
 }
 .formInside{
   position: relative;
@@ -258,4 +259,39 @@ display: -webkit-box;
   width: 100vw;
   height: 100vh;
   background-color:rgba(0, 0, 0, 0.5);
+}
+
+/* Style pagination */
+.pagination{
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  gap: 8px;
+  font-size: 16px;
+  align-items: center;
+}
+.pagination svg{
+  cursor: pointer;
+}
+.pageNumber{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(204, 204, 204);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+}
+.pageNumberDark{
+  background-color: rgb(117, 117, 117);
+}
+.pagination > p{
+  padding: 5px;
+  
+}
+.arrowInvisible{
+  display: none;
 }

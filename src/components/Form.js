@@ -2,7 +2,7 @@ import React from 'react'
 import SearchIcon from '@material-ui/icons/Search';
 import Avatar from '@material-ui/core/Avatar';
 
-function Form() {
+function Form({ setDisplayForm, displayForm }) {
     return (
         <div className="form">
             <div className="form__contains">
@@ -17,7 +17,7 @@ function Form() {
 
                     <div className="item">
                         <h3>Have a Feedback?</h3>
-                        <button>We`re Listening</button>
+                        <button onClick={() => setDisplayForm(!displayForm)}>We`re Listening</button>
                     </div>
                 </div>
                 <div className="form__right">

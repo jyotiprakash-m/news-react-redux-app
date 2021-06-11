@@ -47,7 +47,7 @@ function SideBar() {
                 <div className="formContainer">
                     <div className="greyBody" onClick={() => setDisplayForm(!displayForm)}>nsfjskjfk</div>
                     <div className="formInside">
-                        <Form />
+                        <Form setDisplayForm={setDisplayForm} displayForm={displayForm} />
                     </div>
 
                 </div>

@@ -50,7 +50,7 @@ function NewsListing() {
         <div className="allNews">
 
             <News news={currentNews} />
-            <Pagination pageNumbers={pageNumbers} paginate={paginate} nextPage={nextPage} previousPage={previousPage} />
+            <Pagination pageNumber={pageNumber} pageNumbers={pageNumbers} paginate={paginate} nextPage={nextPage} previousPage={previousPage} />
 
         </div>
     )
