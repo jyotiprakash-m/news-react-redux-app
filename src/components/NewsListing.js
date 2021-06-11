@@ -47,8 +47,8 @@ function NewsListing() {
     console.log(pageNumber)
     console.log(pageNumbers.length)
     return (
-        <div>
-            <h1>News Listing</h1>
+        <div className="allNews">
+
             <News news={currentNews} />
             <Pagination pageNumbers={pageNumbers} paginate={paginate} nextPage={nextPage} previousPage={previousPage} />
 

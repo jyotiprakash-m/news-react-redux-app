@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from "react-redux";
 import Popup from 'reactjs-popup';
+import ListLayout from './ListLayout';
+import BlockLayout from './BlockLayout';
 
 function News({ news }) {
     let layout = useSelector((state) => state.layout.layout);
@@ -17,14 +19,7 @@ function News({ news }) {
             {newsNew.map((item, index) => (
                 <>
                     <Popup
-                        trigger={<div className="button">
-
-                            <p key={item.id} style={{ padding: '10px', margin: '3px', backgroundColor: 'pink' }}>
-                                {item.title}
-                            </p>
-
-
-                        </div>}
+                        trigger={layout ? <ListLayout item={item} /> : <BlockLayout item={item} />}
                         modal
                         nested
                     >

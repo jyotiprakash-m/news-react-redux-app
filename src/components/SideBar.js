@@ -33,10 +33,10 @@ function SideBar() {
                 <div className="item">
                     <h3>View Toggle</h3>
                     <div className="toggleOptions">
-                        <div className="option optionBlue" onClick={listLayout}>
+                        <div className={layout ? "option optionBlue" : "option"} onClick={listLayout}>
                             <FormatListBulletedIcon />
                         </div>
-                        <div className="option optionGrey" onClick={blockLayout}>
+                        <div className={layout ? "option" : "option optionBlue"} onClick={blockLayout}>
                             <ViewAgendaIcon />
                         </div>
                     </div>

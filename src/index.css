@@ -145,7 +145,7 @@ input[type="submit"]{
 }
 .option{
   padding: 10px 15px;
-  background-color: red;
+  background-color: #dbe3eb;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -156,9 +156,7 @@ input[type="submit"]{
 .optionBlue{
   background-color: #97eec8;
 }
-.optionGrey{
-  background-color: #dbe3eb;
-}
+
 .item button{
   box-shadow: none;
   background-color: #97eec8;
@@ -169,4 +167,76 @@ input[type="submit"]{
   padding: 10px 15px;
   margin-top: 20px;
   cursor: pointer;
+}
+
+/* Design News */
+.allNews{
+  padding: 8vh;
+}
+.list{
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+}
+/* ---> List layout */
+.list__containt > img{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.list__containt{
+  display: flex;
+  gap: 20px;
+}
+.news__info > p{
+  font-size: 14px;
+  overflow: hidden;
+width: 100%;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+}
+.time{
+  font-size: large;
+  font-weight: 600;
+  margin-top: 5px;
+  color: rgb(75, 72, 72);
+}
+
+/* --->Block Layout */
+.block{
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  width: 280px;
+  display: inline-flex;
+  margin: 5px;
+}
+
+.block__contain > p {
+  font-size: 14px;
+  overflow: hidden;
+width: 100%;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+}
+.block__contain > h4 {
+  overflow: hidden;
+width: 100%;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+}
+
+.imageContainer{
+  width: 300px;
+  height: 150px;
+  overflow: hidden;
+}
+.imageContainer > img{
+  width: 100%;
+  /* height: 100%; */
 }
