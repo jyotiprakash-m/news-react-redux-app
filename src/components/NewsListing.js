@@ -31,13 +31,13 @@ function NewsListing() {
 
     // Change page
     const nextPage = () => {
-        { pageNumber < pageNumbers.length && setPageNumber(pageNumber + 1) }
-        { pageNumber < pageNumbers.length && setCurrentPage(pageNumber) }
+        pageNumber < pageNumbers.length && setPageNumber(pageNumber + 1);
+        pageNumber < pageNumbers.length && setCurrentPage(pageNumber);
 
     }
     const previousPage = () => {
-        { pageNumber > 0 && setPageNumber(pageNumber - 1) }
-        { pageNumber > 0 && setCurrentPage(pageNumber) }
+        pageNumber > 0 && setPageNumber(pageNumber - 1);
+        pageNumber > 0 && setCurrentPage(pageNumber);
 
     }
     const paginate = (pageNumber) => {
