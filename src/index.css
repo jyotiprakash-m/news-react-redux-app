@@ -300,3 +300,7 @@ display: -webkit-box;
 .arrowInvisible{
   display: none;
 }
+.error{
+  margin-left: 25px;
+  color: rgb(247, 39, 39);
+}
