@@ -37,7 +37,6 @@ function News({ news }) {
                             </div>
                         )}
                     </Popup>
-                    <button onClick={deleteNewsItemHandlar(index)}>Remove</button>
                 </>
             ))
             }
