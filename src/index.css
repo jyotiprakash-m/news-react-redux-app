@@ -128,5 +128,45 @@ input[type="submit"]{
   font-weight: 600;
   font-size: 16px;
   color: white;
+  cursor: pointer;
 }
 
+
+/* Deisgn sidebar */
+.sidebar_contains{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10vh;
+}
+.toggleOptions{
+  display: flex;
+  margin-top: 20px;
+}
+.option{
+  padding: 10px 15px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+}
+
+.optionBlue{
+  background-color: #97eec8;
+}
+.optionGrey{
+  background-color: #dbe3eb;
+}
+.item button{
+  box-shadow: none;
+  background-color: #97eec8;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 20px;
+  cursor: pointer;
+}

@@ -22,27 +22,29 @@ function SideBar() {
     console.log("Display form" + displayForm)
     return (
         <div className="sidebar">
-            <div className="itemProfile">
-                <Avatar alt="Remy Sharp" src="https://material-ui.com/static/images/avatar/1.jpg" />
-                <div className="info">
-                    <h4>Hi,Reader,</h4>
-                    <p>Here`s your News!</p>
-                </div>
-            </div>
-            <div className="item">
-                <h3>View Toggle</h3>
-                <div className="toggleOptions">
-                    <div className="option" onClick={listLayout}>
-                        <FormatListBulletedIcon />
-                    </div>
-                    <div className="option" onClick={blockLayout}>
-                        <ViewAgendaIcon />
+            <div className="sidebar_contains">
+                <div className="itemProfile">
+                    <Avatar alt="Remy Sharp" src="https://material-ui.com/static/images/avatar/1.jpg" />
+                    <div className="info">
+                        <h4>Hi,Reader,</h4>
+                        <p>Here`s your News!</p>
                     </div>
                 </div>
-            </div>
-            <div className="item">
-                <h3>Have a Feedback?</h3>
-                <button onClick={() => setDisplayForm(!displayForm)}>We`re Listening</button>
+                <div className="item">
+                    <h3>View Toggle</h3>
+                    <div className="toggleOptions">
+                        <div className="option optionBlue" onClick={listLayout}>
+                            <FormatListBulletedIcon />
+                        </div>
+                        <div className="option optionGrey" onClick={blockLayout}>
+                            <ViewAgendaIcon />
+                        </div>
+                    </div>
+                </div>
+                <div className="item">
+                    <h3>Have a Feedback?</h3>
+                    <button onClick={() => setDisplayForm(!displayForm)}>We`re Listening</button>
+                </div>
             </div>
 
         </div>
